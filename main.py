@@ -1,18 +1,11 @@
-import random as rand 
+import random
 
-namn = input("vad heter du?")
-print(f"hej {namn} och välkommen till spelet!")
- 
-i = rand.randint(1,10)
+i = random.randint(1,10)
 
-tal = input("gissa talet")
-if tal == i:
-    print(f"du gissade rätt!!!")
-elif tal != i:
-o = input("fel försök igen ")
-elif tal != o:
-    input("fel försök en gång till ")
-else:
-    print(f"du gissade fel")
-print(f"Talet var {i}")
-
+for p in range(3):
+    r = int(input("skriv ett tal "))
+    if r == i:
+        print("du har rätt")
+    else:
+        print("du har fel")
+print(f"talet var {i}")
